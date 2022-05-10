@@ -24,6 +24,7 @@ We will be performing data analysis on several thousands crowdfunding projects t
 3. Provide visual aid to interpret outcomes quickly and efficiently.
 4. Calculate the percentage funded for each campaign and create a color-graded reference.
 5. Find the average donation for each campaing.  
+6. Visualize campaigns' outcomes based on category and subcategory.
 
 ### Challenge Deliverables
 
@@ -44,7 +45,7 @@ set each unique outcome `equal to` a color of choice.
   b. apply a color scale conditional formatting onto the *Percentage Funded* column, and format cells based on their <br>
   values from red for minimum to blue for maximum.
 5. Create a new column called *Average Donation*, and use data from the *pledged* and *backers_count* columns. <br>
-Employ the ROUND formula again, but with a few modifications to the decimals, `=ROUND(E2/L2,2)`.
+Employ the ROUND formula again, but modifying it to output 2 decimal points instead of none: `=ROUND(E2/L2,2)`.
 6. 
 
   
@@ -75,9 +76,14 @@ Employ the ROUND formula again, but with a few modifications to the decimals, `=
 
 4.  Many of the campaigns missed their goal amount by a small margin. By calculating the percentage funded for each campaign and applying a color scale, we could easily judge the outcome and determine how close a campaign came to reaching -and in some cases, exceeding their funding goal.   
 
-5.  We looked through donations to determine how much money people have pledged to campaigns historically, and we calculated the average donation for each to estimate the appropriate incentive amount that should be advertised with the *Fever* kickstarter.
+5.  We looked through donations to determine how much money people have pledged to campaigns historically, and we calculated the average donation for each to estimate the appropriate incentive that should be advertised with the *Fever* kickstarter.
 
-6.   
+6.   The focus of the Louise is fundraising for theater in general, and plays specifically. In order to provide visualization of outcomes for the theater category in comparison with other categories in the dataset, we divided the *Category and Subcategory* column into *Parent Category* and *Subcategory* columns, then we built a pivot table classifying outcomes per parent category and  could be filtered based on country as well. We found that: 
+    - There were 1,393 theater campaigns from all countries.
+    - There were 525 successful theater kickstarters out of 912, in the United States. 
+    - There were 258 successful theater kickstarters out of 359, in Great Britain. <br>
+    ![Outcomes of Fundraising Campaigns in the United States Based on Main Category.](/Images/parent_category_outcomes_US.png)
+8.   
 
 
 
