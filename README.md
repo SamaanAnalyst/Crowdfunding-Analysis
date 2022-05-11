@@ -24,7 +24,10 @@ We will be performing data analysis on several thousands crowdfunding projects t
 3. Provide visual aid to interpret outcomes quickly and efficiently.
 4. Calculate the percentage funded for each campaign and create a color-graded reference.
 5. Find the average donation for each campaing.  
-6. Visualize campaigns' outcomes based on category and subcategory.
+6. Visualize campaigns' outcomes based on category.
+7. Impact of country on fundraising interest and success.
+8. Study the effects of timing and duration on outcomes.
+9. Visualize campaigns' outcomes based on subcategory.
 
 ### Challenge Deliverables
 
@@ -46,9 +49,12 @@ set each unique outcome `equal to` a color of choice.
   values from red for minimum to blue for maximum.
 5. Create a new column called *Average Donation*, and use data from the *pledged* and *backers_count* columns. <br>
 Employ the ROUND formula again, but modifying it to output 2 decimal points instead of none: `=ROUND(E2/L2,2)`.
-6. In order to provide visualization of outcomes for the theater category in comparison with other categories in the dataset, we divided the *Category and Subcategory* column into *Parent Category* and *Subcategory* columns, then we built a pivot table classifying outcomes per parent category that could also be filtered based on country as well. Finally, we created a stacked bar chart that shows which parent categories performed well and which ones did not. 
-    - It is worth noting that pivot charts in Excel are interactive if viewed inside the workbook and will adapt to the chosen filter as we use look through outcomes in different countries.
-8. 
+6. In order to provide visualization of outcomes for the theater category in comparison with other categories in the dataset, divide the *Category and Subcategory* column into *Parent Category* and *Subcategory* columns, then we built a pivot table classifying outcomes per parent category that could also be filtered based on country as well. The specifics of the pivot table are as follows: *outcomes* in Columns, *Parent Category* in Rows, *outcomes* in Values, *country* in Filters.  Finally, we create a stacked column chart that shows which parent categories performed well and which ones did not. 
+    - It is note-worthy that pivot charts in Excel are interactive if viewed inside the workbook and will adapt to the chosen filter as we use look through outcomes in different countries.
+7. Filter the category-outcomes pivot table based on country, and create a stacked column chart for top two countries. 
+8. Create a new pivot table in a new worksheet "Subcategory Statistics" and choose *country* and *Parent Category* to Filters, *outcomes* to Columns, *Subcategory* to Rows, and "outcomes* to Values. Then, choose a stacked column chart type.
+9. The dates provided in the workbook need to be converted from UNIX timestamp to (mm/dd/yyyy) format; this is achievable through such formula `=(((J2/60)/60)/24)+DATE(1970,1,1)`
+10. 
 
   
   
@@ -80,18 +86,40 @@ Employ the ROUND formula again, but modifying it to output 2 decimal points inst
 
 5.  We looked through donations to determine how much money people have pledged to campaigns historically, and we calculated the average donation for each to estimate the appropriate incentive that should be advertised with the *Fever* kickstarter.
 
-6.   The focus of Louise is fundraising for theater. By filtering the pivot table we found:<br>
-  - 1,393 theater campaigns from all countries.
-  - 525 successful theater kickstarters out of 912, in the United States. 
-  - 258 successful theater kickstarters out of 359, in Great Britain. <br>
+6.  Louise's focus is on fundraising for the theater. Hence, we analyzed the outcomes of 1,393 theater campaigns out of 4,114 records, and found that theater kickstarters were the most popular in all countries.<br>
    
-      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes.png" width=65% height=65% align="center">
-7.   
+      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes.png" width=45% height=45% align="center">
+      
+7. Then, we checked the impact of the country of origin on fundraising:
+    - The two most prolific countries were the United States with 3,038 campaigns, and Great Britain with 604. 
+    - Although theater kickstarters were the most popular in both countries, there was more diverse interest in the US.
+    - Theater campaings in Great Britain were drastically more successful that all other campaigns.  
+    - Theater fundraising success rate was higher in Great Britain than in the United States with 72% (258 of 359) and 58% (525 of 912), respectively. <br>
+
+      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes_US.png" width=45% height=45%><img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes_GB.png" width=47.1% height=55%>
  
-
-8.   
-
-
+ 8. We looked more deeply into subcategories and focused our tables and charts on **plays** since theatrial productions is the area of most relevence to the playwright out of all the theater subcategories. overall, campaigns to support plays were the most prevelant across countries. <br>
+     
+ 
+ 
+ 9. Time considerations are very valuable when planning a public effort such as a fundraising; therefore, we analyzed campaigns dates to assess duration and time of year. <br>
+    - 
+ 
+ 10. we apply extra filters: only "theater" in Category Statistics, only "plays" in Subcategory Statistics, only "theater" in Outcomes Based on Launch Date. 
+- Do you notice trends between all the categories and subcategories?
+-- Just by glancing at the data, we can determine that theater is a popular and successful type of campaign overall. 
+-- By using filters, we can see that theater follows the overall trend: there is a spike of successful campaigns that began in June, by that tapers off by the end of the year.
+-- By comparison, the data around technology campaigns reveals a different story; instead of one large spike, their trend lines are a bit all over the place and lest predictable. June seems to be a good month to launch a campaign!
+The month that launched the most successful Kickstarter campaigns was May.
+We create line charts to examine the trends in outcomes based on the time of the year. 
+-- first we examine the outcomes of all campaigns in our dataset over the years, and we see that the months of May and June have a greater success rate overall. 
+-- Second, we filter the chart to reflect only theater campaigns, and we notice that the above is true again for theater campaigns. 
+-- ![Theater Campaigns Had Greater Success in May & June Months.](./Images/theater_outcomes_on_launchdate.png)
+-- a line chart is best to reflect any trends in outcomes of campaings over time, and when examined in the Excel file, it's interactive and can be filtered in the same way you would filter the data table. 
+-- 
+-- ![May Month Launched Most Successful Campaigns.](./Images/outcomes_on_launchdate.png)
+-- However, January, June, July and October all had roughly the same number of failed campaigns launched. 
+--- This can be determined by examining the points along the trend lines of the chart. 
 
 
 
