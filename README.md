@@ -46,7 +46,9 @@ set each unique outcome `equal to` a color of choice.
   values from red for minimum to blue for maximum.
 5. Create a new column called *Average Donation*, and use data from the *pledged* and *backers_count* columns. <br>
 Employ the ROUND formula again, but modifying it to output 2 decimal points instead of none: `=ROUND(E2/L2,2)`.
-6. 
+6. In order to provide visualization of outcomes for the theater category in comparison with other categories in the dataset, we divided the *Category and Subcategory* column into *Parent Category* and *Subcategory* columns, then we built a pivot table classifying outcomes per parent category that could also be filtered based on country as well. Finally, we created a stacked bar chart that shows which parent categories performed well and which ones did not. 
+    - It is worth noting that pivot charts in Excel are interactive if viewed inside the workbook and will adapt to the chosen filter as we use look through outcomes in different countries.
+8. 
 
   
   
@@ -78,11 +80,15 @@ Employ the ROUND formula again, but modifying it to output 2 decimal points inst
 
 5.  We looked through donations to determine how much money people have pledged to campaigns historically, and we calculated the average donation for each to estimate the appropriate incentive that should be advertised with the *Fever* kickstarter.
 
-6.   The focus of the Louise is fundraising for theater in general, and plays specifically. In order to provide visualization of outcomes for the theater category in comparison with other categories in the dataset, we divided the *Category and Subcategory* column into *Parent Category* and *Subcategory* columns, then we built a pivot table classifying outcomes per parent category and  could be filtered based on country as well. We found that: 
-    - There were 1,393 theater campaigns from all countries.
-    - There were 525 successful theater kickstarters out of 912, in the United States. 
-    - There were 258 successful theater kickstarters out of 359, in Great Britain. <br>
-    ![Outcomes of Fundraising Campaigns in the United States Based on Main Category.](/Images/parent_category_outcomes_US.png)
+6.   The focus of Louise is fundraising for theater. By filtering the pivot table we found:<br>
+  - 1,393 theater campaigns from all countries.
+  - 525 successful theater kickstarters out of 912, in the United States. 
+  - 258 successful theater kickstarters out of 359, in Great Britain. <br>
+   
+      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes.png" width=65% height=65% align="center">
+7.   
+ 
+
 8.   
 
 
