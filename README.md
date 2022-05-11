@@ -96,57 +96,18 @@ Employ the ROUND formula again, but modifying it to output 2 decimal points inst
     - Theater campaings in Great Britain were drastically more successful that all other campaigns.  
     - Theater fundraising success rate was higher in Great Britain than in the United States with 72% (258 of 359) and 58% (525 of 912), respectively. <br>
 
-      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes_US.png" width=45% height=45%><img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes_GB.png" width=47.1% height=55%>
+    <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes_US.png" width=45% height=45%><img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes_GB.png" width=47% height=55%>
  
  8. We looked more deeply into subcategories and focused our tables and charts on **plays** since theatrial productions is the area of most relevence to the playwright out of all the theater subcategories. overall, campaigns to support plays were the most prevelant across countries. <br>
      
+      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/subcategory_outcomes.png" width=45% height=45%> <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/subcategory_outcomes_US.png" width=45% height=45%> <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/subcategory_outcomes_GB.png" width=45% height=45%>
  
  
- 9. Time considerations are very valuable when planning a public effort such as a fundraising; therefore, we analyzed campaigns dates to assess duration and time of year. <br>
-    - 
- 
- 10. we apply extra filters: only "theater" in Category Statistics, only "plays" in Subcategory Statistics, only "theater" in Outcomes Based on Launch Date. 
-- Do you notice trends between all the categories and subcategories?
--- Just by glancing at the data, we can determine that theater is a popular and successful type of campaign overall. 
--- By using filters, we can see that theater follows the overall trend: there is a spike of successful campaigns that began in June, by that tapers off by the end of the year.
--- By comparison, the data around technology campaigns reveals a different story; instead of one large spike, their trend lines are a bit all over the place and lest predictable. June seems to be a good month to launch a campaign!
-The month that launched the most successful Kickstarter campaigns was May.
-We create line charts to examine the trends in outcomes based on the time of the year. 
--- first we examine the outcomes of all campaigns in our dataset over the years, and we see that the months of May and June have a greater success rate overall. 
--- Second, we filter the chart to reflect only theater campaigns, and we notice that the above is true again for theater campaigns. 
--- ![Theater Campaigns Had Greater Success in May & June Months.](./Images/theater_outcomes_on_launchdate.png)
--- a line chart is best to reflect any trends in outcomes of campaings over time, and when examined in the Excel file, it's interactive and can be filtered in the same way you would filter the data table. 
--- 
--- ![May Month Launched Most Successful Campaigns.](./Images/outcomes_on_launchdate.png)
--- However, January, June, July and October all had roughly the same number of failed campaigns launched. 
---- This can be determined by examining the points along the trend lines of the chart. 
-
-
 
 
 
 
 ## Conclusions & Recommendations
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
