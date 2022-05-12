@@ -179,7 +179,7 @@ set each unique outcome `equal to` color of choice.
 
 13. We looked through donations to determine how much money people have pledged to campaigns historically and calculated the average donations based on the number of backers for each campaign to estimate the appropriate incentive to use in the *Fever* Kickstarter advertisement.The median of average donations for successful US plays' campaigns was $69 (Q3 = $105, Q1 = $52). <br>
     
-    <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/average_donations_box.png" width=45% height=45%>
+      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/average_donations_box.png" width=50% height=50%>
 
 14. While Louise is committed to creating a play in the United States, she is also interested in researching musicals in Great Britain for a future project with an estimated budget of £4,000. To present Louise with the big picture, we have created a box plot for the 26 British musicals, and it shows that:
       - The mean is considerably higher than the median of the campaign goals, which signifies that the distribution is heavily skewed to the right. 
