@@ -99,13 +99,13 @@ Employ the ROUND formula again, but modify it to output two decimal points inste
 
 3. The ability to visually process outcomes quickly and efficiently is advantageous to campaign organizers. Hence, we set a color code for outcomes: "successful" in green, "failed" in red, "live" in blue, and "canceled" in yellow.
 
-4. Many of the campaigns missed their goal amount by a small margin. By calculating the percentage funded for each campaign and applying a color scale from red (minimum) to blue (maximum), we could easily judge the outcome and determine how close a campaign came to reaching -and in some cases, exceeding their funding goal.<br> [Crowdfunding Excel file.](Resources/crowdfunding_StarterBook.xlsx)   
+4. Many of the campaigns missed their goal amount by a small margin. By calculating the percentage funded for each campaign and applying a color scale from red (minimum) to blue (maximum), we could easily judge the outcome and determine how close a campaign came to reaching -and in some cases, exceeding their funding goal.<br> [Crowdfunding Excel file.](Data/crowdfunding_StarterBook.xlsx)   
 
 5. We looked through donations to determine how much money people have pledged to campaigns historically and calculated the average donation to estimate the appropriate incentive to use in the *Fever* Kickstarter advertisement.
 
 6. Louise's focus is on fundraising for the theater. Hence, we analyzed the outcomes of 1,393 theater campaigns out of 4,114 records and found that theater kickstarters were the most popular in all countries.<br>
    
-      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes.png" width=45% height=45% align="center">
+      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/parent_category_outcomes.png" width=45% height=45% align="center">
       
 7. Then, we checked the impact of the country of origin on fundraising:
     - The two most prolific countries were the United States with 3,038 campaigns and Great Britain with 604. 
@@ -113,11 +113,11 @@ Employ the ROUND formula again, but modify it to output two decimal points inste
     - Theater campaigns in Great Britain were drastically more successful than all other campaigns.  
     - Theater fundraising success rate was higher in Great Britain than in the United States, with 72% (258 of 359) and 58% (525 of 912), respectively. <br>
 
-    <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes_US.png" width=45% height=45%> <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/parent_category_outcomes_GB.png" width=47% height=55%>
+    <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/parent_category_outcomes_US.png" width=45% height=45%> <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/parent_category_outcomes_GB.png" width=47% height=55%>
  
  8. Theatrical productions are the area of most relevance to the playwright out of all the theater subcategories. So, we looked into subcategories in-depth and focused our tables and charts on **plays** since there may be large funding goals for theater-building proposals that would skew the theater fundraising analysis and impair our purpose. Overall, this analysis showed that kickstarters supporting plays were the chief interest across countries. <br>
      
-      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/subcategory_outcomes.png" width=45% height=45%> <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/subcategory_outcomes_US.png" width=45% height=45%> <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/subcategory_outcomes_GB.png" width=45% height=45%>
+      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/subcategory_outcomes.png" width=45% height=45%> <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/subcategory_outcomes_US.png" width=45% height=45%> <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/subcategory_outcomes_GB.png" width=45% height=45%>
   
 9. Time considerations are valuable when planning a public effort such as a fundraiser; therefore, we analyzed campaigns' dates to assess trends. A line chart is best to reflect any trends in outcomes of campaigns over time, and when examined in the Excel file, it is interactive and can be filtered in the same way as filtering the data table. <br>
     - After converting the dates into a readable format and filtering the dataset for successful theater campaigns, we found the average length was 30 days, generally.  
@@ -125,11 +125,11 @@ Employ the ROUND formula again, but modify it to output two decimal points inste
     - Theater followed the overall trend: a spike of successful campaigns began in June but tapered off by the end of the year.
     - The months of May and June had a greater success rate overall. However, January, June, July, and October had roughly the same number of failed campaigns launched.<br>
     
-      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/outcomes_on_launchdate.png" width=45% height=45%> <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/outcomes_on_launchdate_theater.png" width=45% height=45%> 
+      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/outcomes_on_launchdate.png" width=45% height=45%> <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/outcomes_on_launchdate_theater.png" width=45% height=45%> 
       
     - The data around technology campaigns revealed a different story; instead of one large spike, their trend lines were mostly overlapping, thus less predictable. <br>
     
-      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/outcomes_on_launchdate_technology.png" width=45% height=45%>
+      <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/outcomes_on_launchdate_technology.png" width=45% height=45%>
       
 10. Louise has stated interest in specific plays from the United States and Great Britain that could be an example for her campaign. 
     - ***Foresight***: was a play from GB that Louise enjoyed. By looking at the color of the outcome, we can quickly determine that it was a successful campaign; it reached slightly over 100% of its goal - £2,004 pledged for a £2,000 goal, and the average donation of £117.88 was surprisingly high considering there were only 17 backers. Finally, we noticed that the campaign was not active for very long, just under a month (4/22/2016 - 5/16/2016). 
@@ -173,7 +173,7 @@ Employ the ROUND formula again, but modify it to output two decimal points inste
       -  The mean campaign goal is around £4,000; this is outside the range of outliers for the amount pledged, so Louise should probably try to get her play produced for less than £4,000. 
       -  Half of the campaign goals are less than £2,000, which is just over the third quartile for amounts pledged. <br>
       
-         <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Images/musicals_boxplot_GB.png" width=50% height=50%>
+         <img src="https://github.com/Magzzie/Kickstarter-analysis/blob/main/Resources/musicals_boxplot_GB.png" width=50% height=50%>
   
 
 
