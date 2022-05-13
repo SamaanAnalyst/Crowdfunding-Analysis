@@ -34,20 +34,16 @@ We will be performing data analysis on several thousand crowdfunding projects to
 13. Find the average donation for each campaign and visualize donations for plays in the United States.  
 14. Create a Box and Whisker plot for British musical productions.
 
-### Challenge Deliverables
-
 ## Resources
-- Data sources: crowdfunding_StarterBook.xlsx, 
+- Data sources: crowdfunding_StarterBook.xlsx. 
 - Programs: Microsoft Excel.
 - Online Tools: GitHub.
 
 ## Analysis & Code
 The steps of our analysis of the crowdfunding campaign data, along with code snippets, are displayed below.   
 1. Start the analysis by inspecting the dataset, looking at the data's extent, formatting, and readability.
-2. Louise estimates that her play will cost about $10,000, so we apply **filters** on data in the *pledged* and *goal* columns <br>
-to research projects with a similar monetary goal.
-3. Color-code the *outcomes* column using one of the conditional formatting options called **Highlight Cells Rules**, and <br>
-set each unique outcome `equal to` color of choice.  
+2. Louise estimates that her play will cost about $10,000, so we apply **filters** on data in the *pledged* and *goal* columns to research projects with a similar monetary goal.
+3. Color-code the *outcomes* column using one of the conditional formatting options called **Highlight Cells Rules**, and set each unique outcome `equal to` color of choice.  
 4. Create a new column of data called *Percentage Funded*, and <br>
   a. Use the ROUND formula to find the percentage of a campaign's funding from the *pledged* and *goal* columns, as such: `=ROUND(E2/D2*100,0)`.<br> 
   b. Apply a color scale conditional formatting onto the *Percentage Funded* column, and format cells based on their <br>
@@ -71,9 +67,7 @@ set each unique outcome `equal to` color of choice.
 13. In the *Kickstarter* sheet, create a new column called *Average Donation* and use data from the *pledged* and *backers_count* columns and employ the ROUND formula again: `=ROUND(E2/L2,2)`. Next, transfer the average donations of successful and failed US plays' campaigns to a new sheet *Average Donation Box - US*, and insert a box-and-whisker plot to understand the spread of the average donations for plays in the United States more clearly. 
 14. To build a box-and-whisker plot for British musicals, filter the Kickstarter dataset for crowdfunding campaigns in Great Britain (total of 604), then for *musicals* in the theater category, and copy them into a new worksheet named *Musicals GB*. Next, select the Goal and Pledged columns in the new sheet and insert a Box and Whisker into a separate sheet. 
  
-  
-  
-  ### Challenges and Solutions
+### Challenges and Solutions
   - **Percentage Funded** graded-color scale: after applying the conditional formatting, we noticed that we had to scroll through <br>
   many data points before spotting a color transition, which indicated the presence of one or more outliers in the dataset. 
       - **Solution**: Highlight the column again and click *Conditional Formatting* followed by *Manage Rules*, then <br> 
@@ -90,7 +84,7 @@ set each unique outcome `equal to` color of choice.
       - **Solution**: After filtering the *Kickstarters* sheet for GB's musicals, copy and paste these records into a new sheet designated for British musicals only, then build the box-and-whisker plot based on columns from that new sheet. 
 
 ## Results
-1. The preliminary inspection of the Excel file (crowfunding_StarterBook.xlsx) reveals: 
+1. The preliminary inspection of the Excel file (crowfunding_StarterBook.xlsx) reveals the following: 
     - There are 4,114 crowdfunding campaign records in 14 columns and 4,115 rows.
     - Out of 4,114 kickstarters, 3,038 (74%) originated in the United States.
     - For each campaign, there is information about its name and description, category and subcategory, goal and pledged funds, outcome and number of backers, launch and end dates, and country and currency.
