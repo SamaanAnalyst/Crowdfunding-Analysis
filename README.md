@@ -1,4 +1,4 @@
-# An Analysis of Kickstarter Campaigns
+# An Analysis of Fundraising Campaigns
 Performing analysis on Kickstarter data to uncover trends, using Excel built-in functions and pivot charts. <br>
 This project is focused on utilizing Excel functions and solutions to analyze an extensive set of data, and the analysis report <br> is centered around deployed Excel skills and techniques. 
 
